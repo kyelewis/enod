@@ -1,0 +1,19 @@
+{
+  "name": "enod",
+  "version": "0.1.0",
+  "description": "enod",
+  "main": "dist/index.js",
+  "scripts": {
+    "format": "prettier --write .",
+    "test": "npm run test:format && npm run test:unit",
+    "test:format": "prettier --check .",
+    "test:unit": "node -r esbuild-register test"
+  },
+  "author": "Kye Lewis <kye@kyedoesdev.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "esbuild": "0.17.19",
+    "esbuild-register": "3.4.2",
+    "prettier": "2.8.8"
+  }
+}
